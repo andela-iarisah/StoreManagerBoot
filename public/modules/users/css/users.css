@@ -301,12 +301,10 @@ div.editProfile, div.changePsw {
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-o-border-radius: 10px;
-	box-shadow: 0 0 10px #a00;
-	width: 30%;
+	box-shadow: 0 0 10px #a00;	
 }
 
 /**/
-
 
 div.editProfile {
 	margin-top: 60px;
@@ -360,17 +358,51 @@ button.redBg:hover {
 	}
 }
 
-/************************************
-		 CHANGE PASSWORD BOX
-************************************/
+/******************************
+	  CHANGE PASSWORD PAGE
+******************************/
 
 div.changePsw {
-	/*width: 20%;*/
-	/*right: 25px;
-	margin-top: -120px;*/
+	margin-top: 100px;
+	margin-left: -220px;
+	padding: 20px;
 }
 
-/*h3.titleColor_change{
-	width: 25%;
-	left: 510px;
-}*/
+h3.titleColor_change{
+	margin-left: 450px;
+}
+
+/*************************
+	   MEDIA QUERIES
+**************************/
+
+@media screen and (max-width: 991px) {
+	div.changePsw {
+		width: 250px;
+		margin-left: 250px;
+		margin-top: 10px;
+	}
+
+	h3.titleColor_change {
+		margin-left: 250px;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	div.changePsw {
+		width: 70%;
+		margin: 0 15%;
+	}
+
+	h3.titleColor_change {
+		margin-left: 25%;
+	}
+}
+
+@media screen and (max-width: 460px) {
+
+	h3.titleColor_change {
+		margin-top: 50px;
+		margin-left: 20%;
+	}
+}
