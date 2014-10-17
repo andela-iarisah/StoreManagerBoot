@@ -232,6 +232,36 @@ h1.wrap_edit {
 }
 
 /************************************
+		    VIEW PAGE CSS
+************************************/
+
+div.wrapView {
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	padding: 20px;
+	background-color: rgb(240, 240, 240);
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	box-shadow: 0 0 10px #a00;
+	text-align: center;
+}
+
+input.midTxt {
+	text-align: center;
+}
+
+/*************************
+	   MEDIA QUERIES
+**************************/
+
+@media screen and (max-width: 480px) {
+	div.wrapView {
+		display: block;
+	}
+}
+
+/************************************
 		   REPORT PAGE CSS
 ************************************/
 
@@ -239,12 +269,11 @@ div.report {
 	background-color: rgb(240, 240, 240);
 	height: 400px;
 	width: 100%;
-	margin-top: -150px;
 	border-radius: 20px;
 	-moz-border-radius: 20px;
 	-o-border-radius:20px;
 	overflow: auto;
-	position: relative;
+	margin-top: 30px;
 }
 
 table {
@@ -273,32 +302,20 @@ button.redBg_report {
 	float: right;
 }
 
-/************************************
-		    VIEW PAGE CSS
-************************************/
-
-div.wrapView {
-	display: -webkit-flex;
-	-webkit-justify-content: space-between;
-	padding: 20px;
-	background-color: rgb(240, 240, 240);
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-o-border-radius: 10px;
-	box-shadow: 0 0 10px #a00;
-	text-align: center;
-}
-
-input.midTxt {
-	text-align: center;
-}
-
 /*************************
 	   MEDIA QUERIES
 **************************/
 
-@media screen and (max-width: 480px) {
-	div.wrapView {
-		display: block;
+@media print {
+	span.appname {
+		font-size: 4em;
+	}
+
+	img.iconresize {
+		margin-top: 40px;
+	}
+
+	button.redBg_report {
+		display: none;
 	}
 }
