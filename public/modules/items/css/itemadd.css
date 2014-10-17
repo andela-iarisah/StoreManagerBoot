@@ -1,0 +1,291 @@
+/************************************
+		    GENERAL CSS
+************************************/
+div.errorMsg, div.errorMsg_sell {
+	background-color: #a00;
+	width: 20%;
+	color: white;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+/************************************
+		    HEADER CSS
+************************************/
+
+div.logo_name {
+	position: relative;
+	font-size: 0.7em;
+	left: -300px;
+	top: -160px;
+	padding: 0;
+	text-align: center;
+}
+
+span.appname_list {
+	top: 40px;
+	font-family: 'Quattrocento Sans', 'Open Sans', sans-serif;
+	color: black;
+	font-size: 8em;
+	position: relative;
+	left: 20px;
+}
+
+a.dropdown-toggle {
+	font-family: 'comic sans MS', cursive;
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0);
+	/*position: relative;
+	right: 30px;
+	top: 0;*/
+}
+
+/*nav > li.floatRight {
+	list-style: none;
+}
+
+nav > li.floatRight a {
+	list-style: none;
+	color: #a00;
+	padding: 15px;
+	background-color: white;
+	text-align: center;
+	position: relative;
+	top: 0;
+	float: right;
+}*/
+
+a.dropdown-toggle:hover, nav > li.floatRight a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, .5)
+}
+
+/************************************
+		   	  LIST CSS
+************************************/
+
+section.repaint {
+	background-color: white;
+	padding: 20px 50px 20px 20px;
+	margin-top: 30px;
+}
+
+div.flex {
+	width: 100%;
+}
+
+div.moveup {
+	margin-top: -20px;
+}
+
+div.listitem {
+	width: 25%;
+	padding: 10px;
+	color: black;
+}
+
+input#resize {
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+input#btnresize {
+	margin-bottom: 20px;
+}
+
+span.colored, span.colorChange {
+	padding: 5px 15px 5px 10px;
+	color: white;
+}
+
+.colored {
+	background-color: #040;
+}
+
+.colorChange {
+	background-color: #a00;
+}
+
+img.resizeicon {
+	height: 40px;
+	width: 40px;
+}
+
+div.listedItems {
+	overflow: auto;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	background-color: rgba(240, 240, 240, .7);
+	height: 300px;
+	box-shadow: 0 0 10px #a00;
+}
+
+div.itemHover {
+	height: 40px;
+	background-color: rgba(240,240, 240, .7);
+}
+
+div.itemHover:hover {
+	background-color: rgb(200, 200, 200);
+}
+
+div.marginUp {
+	margin-top: -200px;
+}
+
+h1 {
+	color: white;
+	background-color: #a00;
+	width: 250px;
+	text-align: center;
+}
+
+button.redBg_report, button.redBg_report a {
+	color: white;
+	background-color: #a00;
+}
+
+button.redBg_report:hover, button.redBg_report a:hover {
+	background-color: #900;
+	text-decoration: none;
+}
+
+button.redBg_report {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+div.alert {
+	color: #a00;
+	font-size: 1.5em;
+}
+
+/************************************
+		   CREATE PAGE CSS
+************************************/
+
+/* Similar styling */
+
+div.re-move, div.re-move_edit {
+	margin-top: -200px;
+}
+
+/**/
+
+option.itemadd{
+	font-family: arial, sans-serif;
+	color: black;
+}
+
+div.controls {
+	width: 300px;
+}
+
+input.btn, input.btn:hover {
+	background-color: #a00;
+	color: white;
+}
+
+input.btn:hover {
+	background-color: #900;
+}
+
+label.create, label.edit {
+	font-size: 1.2em;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	background-color: rgba(0, 0, 0, .7);
+	margin: 15px 0;
+}
+
+input.padDown {
+	margin-top: 5px;
+}
+
+/************************************
+		   EDIT PAGE CSS
+************************************/
+
+label.edit {
+	font-size: 1em;
+	margin: 5px 0;
+}
+
+/************************************
+		   REPORT PAGE CSS
+************************************/
+
+div.report {
+	background-color: rgb(240, 240, 240);
+	height: 400px;
+	width: 100%;
+	margin-top: -150px;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius:20px;
+	overflow: auto;
+	position: relative;
+}
+
+table {
+	width: 100%;
+}
+
+.tableAlign {
+	width: 16.6666%;
+	text-align: center;
+}
+
+th.tableAlign {
+	padding-top: 10px;
+}
+
+td.tablePadding {
+	padding: 10px 0;
+}
+
+div.btnPad {
+	padding-right: 29px;
+}
+
+button.redBg_report {
+	position: relative;
+	float: right;
+}
+
+/************************************
+		    VIEW PAGE CSS
+************************************/
+
+h1.viewPage {
+	margin-top: -200px;
+}
+
+div.wrapView {
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	padding: 20px;
+	background-color: rgb(240, 240, 240);
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	box-shadow: 0 0 10px #a00;
+	text-align: center;
+}
+
+input.midTxt {
+	text-align: center;
+}
+
+/************************************
+		    PRINT PAGE CSS
+************************************/
+
+@media print {
+	body {
+		font-family: arial;
+		background-color: yellow !important;
+	}
+}
