@@ -263,10 +263,6 @@ button.redBg_report {
 		    VIEW PAGE CSS
 ************************************/
 
-h1.viewPage {
-	margin-top: -200px;
-}
-
 div.wrapView {
 	display: -webkit-flex;
 	-webkit-justify-content: space-between;
@@ -281,6 +277,16 @@ div.wrapView {
 
 input.midTxt {
 	text-align: center;
+}
+
+/*************************
+	   MEDIA QUERIES
+**************************/
+
+@media screen and (max-width: 480px) {
+	div.wrapView {
+		display: block;
+	}
 }
 
 /************************************
