@@ -1,9 +1,13 @@
-<div class= "logo_name">
-    <img src= "modules/core/img/brand/icon.jpg" class= "iconresize">
-    <span class= "appname_list">The Store Manager</span>
-</div>
+<section class="container" data-ng-controller="HomeController">
+    <div class= "row">
+        <div class= "col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 logoUp">
+                <img src= "modules/core/img/brand/icon.jpg" class= "iconresize">
+                <span class= "appname">The Store Manager</span>
+        </div>
+    </div>
+</section>
 <section data-ng-controller="ItemsController" data-ng-init="find()">
-    <div class="page-header marginUp">
+    <div class="page-header">
         <h1>Items in Stock</h1>    
     </div>
     <div data-ng-if= "items.length > 0">
@@ -12,7 +16,7 @@
         </div>
         <div class="listedItems">
             <a data-ng-repeat="item in items | filter: query" data-ng-href="#!/items/{{item._id}}">
-                <div class= "flex group itemHover">
+                <div class= "group itemHover">
                     <div class= "listitem pull-left"><strong>Category: </strong>{{item.category}}</div>
                     <div class= "listitem pull-left"><strong>Item Name: </strong>{{item.itemName}}</div>
                     <div class= "listitem pull-left"><strong>Quantity of item remaining: </strong><span class= "colored" data-ng-class= "{colorChange: item.itemQuantity <= item.minItemQuantity}">{{item.itemQuantity}}</span></div>

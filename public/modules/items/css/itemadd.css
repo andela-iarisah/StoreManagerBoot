@@ -13,47 +13,11 @@ div.errorMsg, div.errorMsg_sell {
 		    HEADER CSS
 ************************************/
 
-div.logo_name {
-	position: relative;
-	font-size: 0.7em;
-	left: -300px;
-	top: -160px;
-	padding: 0;
-	text-align: center;
-}
-
-span.appname_list {
-	top: 40px;
-	font-family: 'Quattrocento Sans', 'Open Sans', sans-serif;
-	color: black;
-	font-size: 8em;
-	position: relative;
-	left: 20px;
-}
-
 a.dropdown-toggle {
 	font-family: 'comic sans MS', cursive;
 	color: #fff;
 	background-color: rgba(255, 255, 255, 0);
-	/*position: relative;
-	right: 30px;
-	top: 0;*/
 }
-
-/*nav > li.floatRight {
-	list-style: none;
-}
-
-nav > li.floatRight a {
-	list-style: none;
-	color: #a00;
-	padding: 15px;
-	background-color: white;
-	text-align: center;
-	position: relative;
-	top: 0;
-	float: right;
-}*/
 
 a.dropdown-toggle:hover, nav > li.floatRight a:hover {
 	text-decoration: none;
@@ -64,16 +28,6 @@ a.dropdown-toggle:hover, nav > li.floatRight a:hover {
 /************************************
 		   	  LIST CSS
 ************************************/
-
-section.repaint {
-	background-color: white;
-	padding: 20px 50px 20px 20px;
-	margin-top: 30px;
-}
-
-div.flex {
-	width: 100%;
-}
 
 div.moveup {
 	margin-top: -20px;
@@ -118,21 +72,18 @@ div.listedItems {
 	-moz-border-radius: 20px;
 	-o-border-radius: 20px;
 	background-color: rgba(240, 240, 240, .7);
-	height: 300px;
+	height: 220px;
 	box-shadow: 0 0 10px #a00;
 }
 
 div.itemHover {
+	width: 100%;
 	height: 40px;
 	background-color: rgba(240,240, 240, .7);
 }
 
 div.itemHover:hover {
 	background-color: rgb(200, 200, 200);
-}
-
-div.marginUp {
-	margin-top: -200px;
 }
 
 h1 {
@@ -160,6 +111,42 @@ button.redBg_report {
 div.alert {
 	color: #a00;
 	font-size: 1.5em;
+}
+
+/*************************
+	   MEDIA QUERIES
+**************************/
+
+@media screen and (max-width: 1200px) {
+	
+	div.listitem {
+		width: 20%;
+	}
+
+	div.itemHover {
+		display: -webkit-flex;
+		height: 70px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	
+	div.itemHover {
+		height: 100px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	
+	div.itemHover {
+		height: 220px;
+		display: -webkit-flex;
+		-webkit-justify-content: space-between;
+	}
+
+	div.listitem {
+		width: 5%;
+	}
 }
 
 /************************************
