@@ -23,9 +23,14 @@
 		    CUSTOM CSS
 ************************************/
 
-/************************************
+button.redBg {
+	background-color: #a00;
+	color: white;
+}
+
+/******************************
 		    HOME PAGE
-************************************/
+******************************/
 div.header {
 	background-color: #a00;
 }
@@ -40,8 +45,8 @@ div.header {
 }
 
 .colorHover:hover {
-	color: black;
-	background-color: #fff;
+	color: #ccc;
+	/*background-color: #fff;*/
 }
 
 body {
@@ -49,7 +54,6 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #ccc;
-	overflow: hidden;
 }
 
 div.logoUp {
@@ -59,9 +63,6 @@ div.logoUp {
 img.iconresize {
 	height: 70px;
 	width: 70px;
-	/*margin: 135px 0 0 80px;
-	position: relative;
-	top: -55px;*/
 }
 
 span.appname {
@@ -70,46 +71,20 @@ span.appname {
 	font-size: 8em;
 	position: relative;
 	top: 35px;
-	/*margin-top: 20px;*/
 }
 
 div.quote {
 	margin-top: 100px;
-	/*margin-right: 20px;
-	width: 40%;*/
 	font-family: roboto, arial, sans-serif;
 	font-weight: 100;
 	color: white;
 	font-size: 2em;
 	background-color: rgba(0, 0, 0, .5);
-	/*position: relative;
-	float: right;
-	top: 180px;*/
 }
 
-a.outer {
-	position: fixed;
-	bottom: 0;
-	background-color: #a00;
-	color: white;
-	left: 0;
-	width: 100%;
-	cursor: default;
-}
-
-a.movedown {
-	position: relative;
-	top: 617px;
-	left: 127px;
-}
-
-a.movedown:hover {
-	color: black;
-}
-
-/************************************
-			MEDIA QUERY
-************************************/
+/******************************
+		MEDIA QUERIES
+******************************/
 
 @media screen and (max-width: 1200px){
 	span.appname {

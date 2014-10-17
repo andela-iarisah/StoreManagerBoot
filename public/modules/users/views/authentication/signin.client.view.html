@@ -1,14 +1,16 @@
-<div class= "home">
-	<div class= "logoname">
-		<img src= "modules/core/img/brand/icon.jpg" class= "iconresize">
-		<span class= "appname">The Store Manager</span>
+<section class="container" data-ng-controller="HomeController">
+	<div class= "row">
+		<div class= "col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 logoUp">
+				<img src= "modules/core/img/brand/icon.jpg" class= "iconresize">
+				<span class= "appname">The Store Manager</span>
+		</div>
 	</div>
-</div>
-<section class="row group repaint" data-ng-controller="AuthenticationController">
+</section>
+<section class="row group" data-ng-controller="AuthenticationController">
 	<div class="col-xs-offset-2 col-xs-8 col-md-offset-5 col-md-2 wrap pull-right">
-		<form data-ng-submit="signin()" class="signin form-horizontal" autocomplete="off">
+		<form data-ng-submit="signin()" class="form-horizontal" autocomplete="off">
 			<fieldset>
-				<div>
+				<div class= "signinCenter">
 					<div class="form-group">
 						<input type="text" id="username" name="username" class="form-control" data-ng-model="credentials.username" placeholder="Username">
 					</div>
@@ -46,7 +48,7 @@
 			</fieldset>
 		</form>
 	</div>
-	<div class= "alignLeft">
+	<div class= "alignLeft col-md-7 col-sm-12 col-xs-6">
 		Join the amazing world of <strong>The Store Manager</strong> today and have yourself a thrilling adventure in inventory management
 			<ul>
 				<li>Improves accuracy of inventory orders</li>
