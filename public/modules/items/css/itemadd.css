@@ -3,7 +3,7 @@
 ************************************/
 div.errorMsg, div.errorMsg_sell {
 	background-color: #a00;
-	width: 20%;
+	width: 100%;
 	color: white;
 	text-align: center;
 	font-size: 1.2em;
@@ -153,14 +153,6 @@ div.alert {
 		   CREATE PAGE CSS
 ************************************/
 
-/* Similar styling */
-
-div.re-move, div.re-move_edit {
-	margin-top: -200px;
-}
-
-/**/
-
 option.itemadd{
 	font-family: arial, sans-serif;
 	color: black;
@@ -184,11 +176,36 @@ label.create, label.edit {
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
 	background-color: rgba(0, 0, 0, .7);
-	margin: 15px 0;
+	margin: 5px 0;
 }
 
-input.padDown {
-	margin-top: 5px;
+div.wrap_add {
+	padding-left: 40px;
+	background-color: rgb(240, 240, 240);
+	width: 350px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	box-shadow: 0 0 10px #a00;
+	margin-top: -17px;
+}
+
+input.btnSpace {
+	margin-top: -10px;
+}
+
+/*************************
+	   MEDIA QUERIES
+**************************/
+
+@media screen and (max-width: 320px) {
+	div.wrap_add {
+		width: 80%;
+	}
+
+	input.padDown {
+		width: 60%;
+	}
 }
 
 /************************************
