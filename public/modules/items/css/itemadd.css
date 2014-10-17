@@ -179,7 +179,7 @@ label.create, label.edit {
 	margin: 5px 0;
 }
 
-div.wrap_add {
+div.wrap_add, div.wrap_add_edit {
 	padding-left: 40px;
 	background-color: rgb(240, 240, 240);
 	width: 350px;
@@ -190,7 +190,7 @@ div.wrap_add {
 	margin-top: -17px;
 }
 
-input.btnSpace {
+.btnSpace {
 	margin-top: -10px;
 }
 
@@ -215,6 +215,20 @@ input.btnSpace {
 label.edit {
 	font-size: 1em;
 	margin: 5px 0;
+}
+
+h1.wrap_edit {
+	margin-top: -40px;
+}
+
+/*************************
+	   MEDIA QUERIES
+**************************/
+
+@media screen and (max-width: 1200px) {
+	div.re-move_edit {
+		margin-top: 80px;
+	}
 }
 
 /************************************
@@ -286,16 +300,5 @@ input.midTxt {
 @media screen and (max-width: 480px) {
 	div.wrapView {
 		display: block;
-	}
-}
-
-/************************************
-		    PRINT PAGE CSS
-************************************/
-
-@media print {
-	body {
-		font-family: arial;
-		background-color: yellow !important;
 	}
 }
