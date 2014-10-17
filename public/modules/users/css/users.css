@@ -211,24 +211,18 @@ img.icon {
 
 }
 
-/************************************
-		  	SIGNUP BOX
-************************************/
+/*************************
+		SIGNUP BOX
+**************************/
 
 div.signup {
 	width: 30%;
-	margin-top: 30px;
-	padding: 10px 30px;
-	position: relative;
-	right: 50px;
-}
-
-div.logoname_signup {
-	padding-bottom: 20px;
+	margin-top: 5px;
+	padding: 15px 30px;
 }
 
 div.down {
-	margin-top: 20px;
+	margin-top: -10px;
 }
 
 fieldset.signupFieldset {
@@ -238,6 +232,48 @@ fieldset.signupFieldset {
 
 a.red {
 	color: #a00;
+}
+
+/*************************
+	   MEDIA QUERIES
+**************************/
+
+@media screen and (max-width: 1200px) {
+	div.signup {
+		margin-top: 25px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	div.signup {
+		float: right;
+		margin-top: -80px;
+		width: 350px;
+	}
+}
+
+@media screen and (max-width: 970px) {
+	div.signup {
+		width: 350px;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	div.signup {
+		width: 80%;
+		margin-top: 43px;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 350px){
+	div.signup {
+		width: 100%;
+		margin-top: 43px;
+		margin-left: 0;
+	}
 }
 
 

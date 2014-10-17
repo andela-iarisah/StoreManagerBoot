@@ -1,11 +1,13 @@
-<div class= "home">
-	<div class= "logoname logoname_signup">
-		<img src= "modules/core/img/brand/icon.jpg" class= "iconresize">
-		<span class= "appname">The Store Manager</span>
+<section class="container" data-ng-controller="HomeController">
+	<div class= "row">
+		<div class= "col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 logoUp">
+				<img src= "modules/core/img/brand/icon.jpg" class= "iconresize">
+				<span class= "appname">The Store Manager</span>
+		</div>
 	</div>
-</div>
+</section>
 <section class="row bodyresize" data-ng-controller="AuthenticationController">
-	<div class="col-xs-offset-2 col-xs-8 col-md-offset-5 col-md-2 signup">
+	<div class="col-xs-offset-0 col-xs-12 col-md-offset-5 col-md-2 signup">
 		<form name="userForm" data-ng-submit="signup()" class="signin form-horizontal" novalidate autocomplete="off">
 			<fieldset class= "signupFieldset">
 				<div class="form-group down">
